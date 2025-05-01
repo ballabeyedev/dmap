@@ -1,0 +1,28 @@
+{% load static %}
+{% include "Medecin/section/head.html" %}
+<body class="skin-blue">
+    <div class="wrapper"> 
+      {% include "Medecin/section/header.html" %}
+      {% include "Medecin/section/menugauche.html" %}
+
+      <!-- Contenue -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+            Accueil
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i>Acceuil</a></li>
+          </ol>
+        </section>
+
+      </div>
+      <!--End Contenue -->
+
+      {% include "Medecin/section/footer.html" %}
+    </div><!-- ./wrapper -->
+    {% include "Medecin/section/script.html" %}
+
+  </body>
+</html>

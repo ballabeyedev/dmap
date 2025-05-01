@@ -1,0 +1,81 @@
+{% load static %}
+<aside class="main-sidebar">
+  <!-- sidebar: style can be found in sidebar.less -->
+  <section class="sidebar">
+    <!-- Sidebar user panel -->
+    <div class="user-panel">
+      <div class="pull-left image">
+        <img src="{% static 'client/dist/img/user2-160x160.jpg' %}" class="img-circle" alt="User Image" />
+      </div>
+      <div class="pull-left info">
+        <p>Modou FALL</p>
+        <a href="#"><i class="fa fa-circle text-success"></i> En Ligne</a>
+      </div>
+    </div>
+
+    <!-- sidebar menu -->
+    <ul class="sidebar-menu">
+      <li class="header">MENU PATIENT</li>
+    
+      <li class="active treeview">
+        <a href="{% url 'patient' %}">
+          <i class="fa fa-home"></i> <span>Accueil</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="{% url 'profil' %}">
+          <i class="fa fa-user"></i> <span>Mon Profil</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="{% url 'dossiermedical' %}">
+          <i class="fa fa-folder"></i> <span>Dossier Médical Complet</span>
+        </a>
+      </li>
+    
+      <li class="treeview">
+        <a href="#">
+          <i class="fa fa-folder-open"></i>
+          <span>Consulter Dossier Médical</span>
+          <i class="fa fa-angle-left pull-right"></i>
+        </a>
+        <ul class="treeview-menu">
+          <li><a href="{% url 'historiquesoin' %}"><i class="fa fa-history"></i> Historique des Traitements</a></li>
+          <li><a href="{% url 'examenmedical' %}"><i class="fa fa-flask"></i>Examens Médicaux</a></li>
+          <li><a href="{% url 'consultation' %}"><i class="fa fa-stethoscope"></i> Diagnostic Consultation</a></li>
+          <li><a href="{% url 'prescription' %}"><i class="fa fa-medkit"></i> Liste des Prescriptions</a></li>
+          <li><a href="{% url 'documentmedical' %}"><i class="fa fa-file-text"></i> Document Médical</a></li>
+        </ul>
+      </li>
+    
+      <li>
+        <a href="{% url 'qrcode' %}">
+          <i class="fa fa-qrcode"></i> <span>Afficher Code QR</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="{% url 'demandecarte' %}">
+          <i class="fa fa-id-card"></i> <span>Demande Carte Patient</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="{% url 'chatbot' %}">
+          <i class="fa fa-commenting"></i> <span>ChatBot</span>
+        </a>
+      </li>
+    
+      <li>
+        <a href="">
+          <i class="fa fa-sign-out"></i> <span>Déconnexion</span>
+        </a>
+      </li>
+    </ul>
+    
+    
+  </section>
+  <!-- /.sidebar -->
+</aside>
